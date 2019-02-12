@@ -1,0 +1,14 @@
+query testQuery {
+  characters {
+    results {
+      id
+      name
+      gender
+      image
+      origin {
+        id
+        name # extended in ./extendedSchema.graphql
+      }
+    }
+  }
+}
